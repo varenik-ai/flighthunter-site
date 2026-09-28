@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://varenik-ai.github.io/flighthunter-site/sitemap.xml
