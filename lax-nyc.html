@@ -4,20 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Дешёвые авиабилеты Лос-Анджелес — Нью-Йорк 🇺🇸 | FlightHunter</title>
-<meta name="description" content="Билеты Лос-Анджелес → Нью-Йорк: минимальная цена за последние 90 дней 188 $ (по данным 60 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
+<meta name="description" content="Билеты Лос-Анджелес → Нью-Йорк: минимальная цена за последние 90 дней 188 $ (по данным 61 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
 <link rel="canonical" href="https://varenik-ai.github.io/flighthunter-site/lax-nyc.html">
+<link rel="alternate" hreflang="ru" href="https://varenik-ai.github.io/flighthunter-site/lax-nyc.html">
 <meta property="og:title" content="Дешёвые авиабилеты Лос-Анджелес — Нью-Йорк 🇺🇸 | FlightHunter">
-<meta property="og:description" content="Билеты Лос-Анджелес → Нью-Йорк: минимальная цена за последние 90 дней 188 $ (по данным 60 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
+<meta property="og:description" content="Билеты Лос-Анджелес → Нью-Йорк: минимальная цена за последние 90 дней 188 $ (по данным 61 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
 <meta property="og:type" content="website">
 <meta name="robots" content="index, follow">
 <style>
 :root{--bg:#0b0e17;--surface:#131826;--border:#232a3d;--text:#dbe1f0;--muted:#7c86a3;--accent:#3aa0ff;--good:#38d986}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
-.wrap{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+.wrap{max-width:880px;margin:0 auto;padding:24px 20px 60px}
 header{padding:16px 20px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg)}
 header a{color:var(--text);text-decoration:none;font-weight:600}
+.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:14px}
+.breadcrumb a{color:var(--muted)}
+.breadcrumb a:hover{color:var(--accent)}
 h1{font-size:26px;line-height:1.3;margin:18px 0 10px}
+h2{font-size:18px;margin:32px 0 14px}
 .stats{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 18px;flex:1;min-width:150px}
 .stat .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
@@ -28,17 +33,30 @@ h1{font-size:26px;line-height:1.3;margin:18px 0 10px}
 .cta.secondary{background:transparent;border:1px solid var(--border);color:var(--text)}
 p{color:var(--text)}
 .muted{color:var(--muted);font-size:13px}
-.routes{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:16px}
-.routes a{display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;
-          padding:12px 14px;color:var(--text);text-decoration:none}
-.routes a:hover{border-color:var(--accent)}
+/* Список направлений: фиксированная строка-таблица вместо плавающего
+   grid — раньше minmax(220px,1fr) давал рваные переносы, когда названия
+   городов разной длины (найдено на ревью 28.09.2026). Список строк с
+   выравниванием по правому краю читается ровно при любой длине текста. */
+.route-list{display:flex;flex-direction:column;gap:6px;margin-top:16px}
+.route-list a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+              background:var(--surface);border:1px solid var(--border);border-radius:8px;
+              padding:11px 14px;color:var(--text);text-decoration:none}
+.route-list a:hover{border-color:var(--accent)}
+.route-list .to{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.route-list .price{flex-shrink:0;color:var(--good);font-weight:600;white-space:nowrap}
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:16px}
+.hub-grid a{display:block;text-align:center;background:var(--surface);border:1px solid var(--border);
+            border-radius:10px;padding:14px 10px;color:var(--text);text-decoration:none;font-weight:600}
+.hub-grid a:hover{border-color:var(--accent)}
 footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Авиабилеты Лос-Анджелес — Нью-Йорк", "description": "Билеты Лос-Анджелес → Нью-Йорк: минимальная цена за последние 90 дней 188 $ (по данным 61 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.", "offers": {"@type": "Offer", "price": 188, "priceCurrency": "USD", "availability": "https://schema.org/LimitedAvailability", "priceValidUntil": "2026-09-29", "url": "https://www.aviasales.com/search/LAX1NYC1?marker=779096"}}</script>
 </head>
 <body>
 <header><a href="https://varenik-ai.github.io/flighthunter-site/">✈️ FlightHunter — дешёвые авиабилеты</a></header>
 <div class="wrap">
 
+<div class="breadcrumb"><a href="https://varenik-ai.github.io/flighthunter-site/">Главная</a> → <a href="from-lax.html">Билеты из Лос-Анджелес</a> → Нью-Йорк</div>
 <h1>✈️ Лос-Анджелес → Нью-Йорк 🇺🇸</h1>
 <p>Отслеживаем цены на этом направлении каждые 30 минут и публикуем в Telegram  как только
 находим билет минимум на 30% дешевле обычного. Вот что мы видели за последние 90 дней:</p>
@@ -65,8 +83,18 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
   🔍 Посмотреть билеты на Aviasales
 </a>
 
-<p class="muted">Данные основаны на 60 автоматических проверках цен за последние 90 дней.
+<p class="muted">Данные основаны на 61 автоматических проверках цен за последние 90 дней.
 Реальная цена на момент вашего поиска может отличаться — авиакомпании меняют тарифы в течение дня.</p>
+
+<h2>Другие направления из Лос-Анджелес</h2>
+<div class="route-list">
+<a href="lax-sfo.html"><span class="to">Сан-Франциско</span><span class="price">от 26 $</span></a>
+<a href="lax-sts.html"><span class="to">Санта-Роза</span><span class="price">от 159 $</span></a>
+<a href="lax-gdl.html"><span class="to">Гвадалахара</span><span class="price">от 163 $</span></a>
+<a href="lax-las.html"><span class="to">Лас-Вегас</span><span class="price">от 32 $</span></a>
+<a href="lax-phx.html"><span class="to">Phoenix</span><span class="price">от 108 $</span></a>
+</div>
+
 
 <footer>
   FlightHunter — независимый агрегатор скидок на авиабилеты. Цены и партнёрские ссылки предоставлены Aviasales/Travelpayouts.
