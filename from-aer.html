@@ -48,6 +48,10 @@ p{color:var(--text)}
 .hub-grid a{display:block;text-align:center;background:var(--surface);border:1px solid var(--border);
             border-radius:10px;padding:14px 10px;color:var(--text);text-decoration:none;font-weight:600}
 .hub-grid a:hover{border-color:var(--accent)}
+.search-box{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--border);
+            background:var(--surface);color:var(--text);font-size:14px;margin:14px 0 4px}
+.search-box:focus{outline:none;border-color:var(--accent)}
+.search-empty{display:none;color:var(--muted);font-size:13px;padding:12px 0}
 footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
 </style>
 
@@ -60,7 +64,8 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
 <h1>✈️ Дешёвые авиабилеты из Сочи</h1>
 <p>35 направлений с накопленной статистикой цен за последние 90 дней. Выбирай маршрут —
 внутри актуальные минимальная и обычная цена.</p>
-<div class="route-list">
+<input class="search-box" type="text" placeholder="Искать направление…" data-target="#hub-routes">
+<div class="route-list" id="hub-routes">
 <a href="aer-pee.html"><span class="to">Perm ✈️</span><span class="price">от 8 859 ₽</span></a>
 <a href="aer-asf.html"><span class="to">Астрахань ✈️</span><span class="price">от 5 368 ₽</span></a>
 <a href="aer-tjm.html"><span class="to">Тюмень ✈️</span><span class="price">от 8 789 ₽</span></a>
@@ -73,9 +78,9 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
 <a href="aer-iwa.html"><span class="to">Иваново ✈️</span><span class="price">от 12 234 ₽</span></a>
 <a href="aer-pez.html"><span class="to">Пенза ✈️</span><span class="price">от 8 060 ₽</span></a>
 <a href="aer-nbc.html"><span class="to">Нижнекамск ✈️</span><span class="price">от 10 824 ₽</span></a>
+<a href="aer-svx.html"><span class="to">Екатеринбург 🇷🇺</span><span class="price">от 10 483 ₽</span></a>
 <a href="aer-iar.html"><span class="to">Ярославль ✈️</span><span class="price">от 7 670 ₽</span></a>
 <a href="aer-msq.html"><span class="to">Минск 🇧🇾</span><span class="price">от 12 627 ₽</span></a>
-<a href="aer-svx.html"><span class="to">Екатеринбург 🇷🇺</span><span class="price">от 10 483 ₽</span></a>
 <a href="aer-uly.html"><span class="to">Ульяновск ✈️</span><span class="price">от 9 777 ₽</span></a>
 <a href="aer-evn.html"><span class="to">Ереван 🇦🇲</span><span class="price">от 9 805 ₽</span></a>
 <a href="aer-cek.html"><span class="to">Челябинск ✈️</span><span class="price">от 10 857 ₽</span></a>
@@ -97,6 +102,7 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
 <a href="aer-stw.html"><span class="to">Ставрополь ✈️</span><span class="price">от 3 738 ₽</span></a>
 <a href="aer-tbs.html"><span class="to">Тбилиси 🇬🇪</span><span class="price">от 10 875 ₽</span></a>
 </div>
+<div class="search-empty">Ничего не нашлось — попробуй другой запрос.</div>
 
 <footer>
   FlightHunter — независимый агрегатор скидок на авиабилеты. Цены и партнёрские ссылки предоставлены Aviasales/Travelpayouts.
@@ -104,5 +110,25 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
   на выбранные вами даты.
 </footer>
 </div>
+
+<script>
+document.querySelectorAll('.search-box').forEach(function(input){
+  var list = document.querySelector(input.dataset.target);
+  var empty = list ? list.parentElement.querySelector('.search-empty') : null;
+  if(!list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('a'));
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function(a){
+      var match = a.textContent.toLowerCase().indexOf(q) !== -1;
+      a.style.display = match ? '' : 'none';
+      if(match) shown++;
+    });
+    if(empty) empty.style.display = shown === 0 ? 'block' : 'none';
+  });
+});
+</script>
+
 </body>
 </html>

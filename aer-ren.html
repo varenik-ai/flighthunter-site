@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Дешёвые авиабилеты Сочи — Оренбург ✈️ | FlightHunter</title>
-<meta name="description" content="Билеты Сочи → Оренбург: минимальная цена за последние 90 дней 13 438 ₽ (по данным 60 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
+<meta name="description" content="Билеты Сочи → Оренбург: минимальная цена за последние 90 дней 13 438 ₽ (по данным 61 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
 <link rel="canonical" href="https://varenik-ai.github.io/flighthunter-site/aer-ren.html">
 <link rel="alternate" hreflang="ru" href="https://varenik-ai.github.io/flighthunter-site/aer-ren.html">
 <meta property="og:title" content="Дешёвые авиабилеты Сочи — Оренбург ✈️ | FlightHunter">
-<meta property="og:description" content="Билеты Сочи → Оренбург: минимальная цена за последние 90 дней 13 438 ₽ (по данным 60 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
+<meta property="og:description" content="Билеты Сочи → Оренбург: минимальная цена за последние 90 дней 13 438 ₽ (по данным 61 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.">
 <meta property="og:type" content="website">
 <meta name="robots" content="index, follow">
 <style>
@@ -48,9 +48,13 @@ p{color:var(--text)}
 .hub-grid a{display:block;text-align:center;background:var(--surface);border:1px solid var(--border);
             border-radius:10px;padding:14px 10px;color:var(--text);text-decoration:none;font-weight:600}
 .hub-grid a:hover{border-color:var(--accent)}
+.search-box{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--border);
+            background:var(--surface);color:var(--text);font-size:14px;margin:14px 0 4px}
+.search-box:focus{outline:none;border-color:var(--accent)}
+.search-empty{display:none;color:var(--muted);font-size:13px;padding:12px 0}
 footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Авиабилеты Сочи — Оренбург", "description": "Билеты Сочи → Оренбург: минимальная цена за последние 90 дней 13 438 ₽ (по данным 60 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.", "offers": {"@type": "Offer", "price": 13438, "priceCurrency": "RUB", "availability": "https://schema.org/LimitedAvailability", "priceValidUntil": "2026-09-29", "url": "https://www.aviasales.com/search/AER1REN1?marker=779096"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Авиабилеты Сочи — Оренбург", "description": "Билеты Сочи → Оренбург: минимальная цена за последние 90 дней 13 438 ₽ (по данным 61 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.", "offers": {"@type": "Offer", "price": 13438, "priceCurrency": "RUB", "availability": "https://schema.org/LimitedAvailability", "priceValidUntil": "2026-09-29", "url": "https://www.aviasales.com/search/AER1REN1?marker=779096"}}</script>
 </head>
 <body>
 <header><a href="https://varenik-ai.github.io/flighthunter-site/">✈️ FlightHunter — дешёвые авиабилеты</a></header>
@@ -83,7 +87,7 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
   🔍 Посмотреть билеты на Aviasales
 </a>
 
-<p class="muted">Данные основаны на 60 автоматических проверках цен за последние 90 дней.
+<p class="muted">Данные основаны на 61 автоматических проверках цен за последние 90 дней.
 Реальная цена на момент вашего поиска может отличаться — авиакомпании меняют тарифы в течение дня.</p>
 
 <h2>Другие направления из Сочи</h2>
@@ -102,5 +106,25 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
   на выбранные вами даты.
 </footer>
 </div>
+
+<script>
+document.querySelectorAll('.search-box').forEach(function(input){
+  var list = document.querySelector(input.dataset.target);
+  var empty = list ? list.parentElement.querySelector('.search-empty') : null;
+  if(!list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('a'));
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function(a){
+      var match = a.textContent.toLowerCase().indexOf(q) !== -1;
+      a.style.display = match ? '' : 'none';
+      if(match) shown++;
+    });
+    if(empty) empty.style.display = shown === 0 ? 'block' : 'none';
+  });
+});
+</script>
+
 </body>
 </html>

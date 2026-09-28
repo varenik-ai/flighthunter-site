@@ -48,6 +48,10 @@ p{color:var(--text)}
 .hub-grid a{display:block;text-align:center;background:var(--surface);border:1px solid var(--border);
             border-radius:10px;padding:14px 10px;color:var(--text);text-decoration:none;font-weight:600}
 .hub-grid a:hover{border-color:var(--accent)}
+.search-box{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--border);
+            background:var(--surface);color:var(--text);font-size:14px;margin:14px 0 4px}
+.search-box:focus{outline:none;border-color:var(--accent)}
+.search-empty{display:none;color:var(--muted);font-size:13px;padding:12px 0}
 footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Авиабилеты Варшава — Париж", "description": "Билеты Варшава → Париж: минимальная цена за последние 90 дней 50 € (по данным 12 проверок). Подпишись на Telegram-канал — пришлём  когда цена снова упадёт.", "offers": {"@type": "Offer", "price": 50, "priceCurrency": "EUR", "availability": "https://schema.org/LimitedAvailability", "priceValidUntil": "2026-09-29", "url": "https://www.aviasales.com/search/WAW1PAR1?marker=779096"}}</script>
@@ -102,5 +106,25 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
   на выбранные вами даты.
 </footer>
 </div>
+
+<script>
+document.querySelectorAll('.search-box').forEach(function(input){
+  var list = document.querySelector(input.dataset.target);
+  var empty = list ? list.parentElement.querySelector('.search-empty') : null;
+  if(!list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('a'));
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function(a){
+      var match = a.textContent.toLowerCase().indexOf(q) !== -1;
+      a.style.display = match ? '' : 'none';
+      if(match) shown++;
+    });
+    if(empty) empty.style.display = shown === 0 ? 'block' : 'none';
+  });
+});
+</script>
+
 </body>
 </html>
