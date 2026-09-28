@@ -238,6 +238,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-bcn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-ber.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-bgo.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-bll.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-blq.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-bod.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-bri.html</loc></url>
@@ -268,6 +269,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-trn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-vce.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/bud-waw.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/dus-aga.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/dus-alc.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/dus-bcn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/dus-bri.html</loc></url>
@@ -369,40 +371,70 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/evn-vlc.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/evn-waw.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-alc.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-alc.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-bcn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-bcn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-blq.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-blq.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-bri.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-bri.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-bud.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-bud.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-buh.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-buh.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-cta.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-cta.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-dub.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-fao.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-goa.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-goa.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-gro.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-gro.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-ist.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-kut.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-kut.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-lon.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-lon.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-mad.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-mad.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-mil.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-mil.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-mla.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-mla.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-ndr.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-ndr.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-olb.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-olb.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-opo.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-opo.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-osl.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-pmf.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-pmf.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-pmi.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-pmi.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-pmo.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-pmo.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-rak.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-rak.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-rmo.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-rmo.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-rom.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-rom.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-skg.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-skg.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-sof.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-sof.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-sto.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-suf.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-tia.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-tia.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-var.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-var.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-vce.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-vce.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-vlc.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-vlc.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-vno.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/fra-vno.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ham-agp.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ham-alc.html</loc></url>
@@ -500,6 +532,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-prn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-rmo.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-rzv.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-sjj.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-szf.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-tia.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ist-tjk.html</loc></url>
@@ -540,14 +573,17 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/krr-tjm.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/krr-ufa.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/krr-uly.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/krr-vog.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-aer.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-arh.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-asf.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-bax.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-cek.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-csy.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-goj.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-hma.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-iar.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-ijk.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-kgd.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-krr.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/kzn-kuf.html</loc></url>
@@ -798,6 +834,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-las.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-mia.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-msy.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-myr.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-orf.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-orl.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/nyc-pbi.html</loc></url>
@@ -846,6 +883,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ovb-ukk.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ovb-uly.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/ovb-uud.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/ovb-vog.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/pmi-agp.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/pmi-alc.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/pmi-bcn.html</loc></url>
@@ -914,6 +952,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/prg-sto.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/prg-tia.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/prg-trn.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/prg-trs.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/prg-vce.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/prg-vno.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/sin-bki.html</loc></url>
@@ -1063,6 +1102,7 @@
   <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-beg.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-ber.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-bru.html</loc></url>
+  <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-bts.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-bud.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-cgn.html</loc></url>
   <url><loc>https://varenik-ai.github.io/flighthunter-site/tbs-dtm.html</loc></url>
