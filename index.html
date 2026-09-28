@@ -48,9 +48,16 @@ p{color:var(--text)}
 .hub-grid a{display:block;text-align:center;background:var(--surface);border:1px solid var(--border);
             border-radius:10px;padding:14px 10px;color:var(--text);text-decoration:none;font-weight:600}
 .hub-grid a:hover{border-color:var(--accent)}
-.search-box{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--border);
-            background:var(--surface);color:var(--text);font-size:14px;margin:14px 0 4px}
-.search-box:focus{outline:none;border-color:var(--accent)}
+/* Поиск — сделан заметным намеренно (29.09.2026, по отзыву пользователя:
+   на тёмном сайте прежний тихий инпут терялся внизу страницы). Обёртка
+   с иконкой и всегда видимой акцентной рамкой, а не только на фокусе. */
+.search-wrap{position:relative;margin:14px 0 4px}
+.search-wrap .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);
+                    color:var(--accent);font-size:16px;pointer-events:none}
+.search-box{width:100%;padding:14px 14px 14px 42px;border-radius:10px;border:2px solid var(--accent);
+            background:var(--surface);color:var(--text);font-size:15px}
+.search-box::placeholder{color:var(--muted)}
+.search-box:focus{outline:none;box-shadow:0 0 0 3px rgba(58,160,255,.25)}
 .search-empty{display:none;color:var(--muted);font-size:13px;padding:12px 0}
 footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
 </style>
@@ -64,32 +71,14 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
 <p>Мы автоматически проверяем цены на авиабилеты каждые 30 минут и публикуем в Telegram только
 настоящие выгодные предложения — минимум на 30% ниже обычной цены направления.</p>
 
-<h2>🔥 Топ актуальных скидок</h2>
-<div class="route-list">
-<a href="dxb-tas.html"><span class="to">Дубай → Ташкент ✈️</span><span class="price">от 86 $</span></a>
-<a href="lax-sfo.html"><span class="to">Лос-Анджелес → Сан-Франциско 🇺🇸</span><span class="price">от 26 $</span></a>
-<a href="krr-aer.html"><span class="to">Краснодар → Сочи 🇷🇺</span><span class="price">от 8 047 ₽</span></a>
-<a href="led-kzn.html"><span class="to">Санкт-Петербург → Казань 🇷🇺</span><span class="price">от 3 685 ₽</span></a>
-<a href="mow-msq.html"><span class="to">Москва → Минск 🇧🇾</span><span class="price">от 2 455 ₽</span></a>
-<a href="tbs-ist.html"><span class="to">Тбилиси → Стамбул 🇹🇷</span><span class="price">от 73 €</span></a>
-<a href="led-tjm.html"><span class="to">Санкт-Петербург → Тюмень ✈️</span><span class="price">от 6 940 ₽</span></a>
-<a href="led-skx.html"><span class="to">Санкт-Петербург → Саранск ✈️</span><span class="price">от 6 230 ₽</span></a>
-<a href="sof-krk.html"><span class="to">София → Краков 🇵🇱</span><span class="price">от 28 €</span></a>
-<a href="vie-sof.html"><span class="to">Вена → София 🇧🇬</span><span class="price">от 51 €</span></a>
-<a href="dxb-mct.html"><span class="to">Дубай → Маскат ✈️</span><span class="price">от 67 $</span></a>
-<a href="mad-mil.html"><span class="to">Мадрид → Милан 🇮🇹</span><span class="price">от 21 €</span></a>
-<a href="dus-gro.html"><span class="to">Дюссельдорф → Жирона 🇪🇸</span><span class="price">от 57 €</span></a>
-<a href="nyc-las.html"><span class="to">Нью-Йорк → Лас-Вегас ✈️</span><span class="price">от 154 $</span></a>
-<a href="ham-dub.html"><span class="to">Гамбург → Дублин 🇮🇪</span><span class="price">от 55 €</span></a>
-<a href="bcn-pmo.html"><span class="to">Барселона → Палермо ✈️</span><span class="price">от 24 €</span></a>
-<a href="fra-skg.html"><span class="to">Франкфурт → Салоники ✈️</span><span class="price">от 72 $</span></a>
-<a href="prg-rom.html"><span class="to">Прага → Рим 🇮🇹</span><span class="price">от 32 €</span></a>
-<a href="aer-pee.html"><span class="to">Сочи → Perm ✈️</span><span class="price">от 8 859 ₽</span></a>
-<a href="mad-aho.html"><span class="to">Мадрид → Альгеро ✈️</span><span class="price">от 36 €</span></a>
-</div>
+<a class="cta" href="https://t.me/goravia_ru" target="_blank" rel="noopener">
+  🔔 Подписаться на Telegram-канал
+</a>
+
+<div class="search-wrap"><span class="icon">🔍</span><input class="search-box" type="text" placeholder="Искать город вылета или направление…" data-target="#hub-cities"></div>
+<div class="search-empty">Ничего не нашлось — попробуй другой запрос.</div>
 
 <h2>Билеты по городам вылета</h2>
-<input class="search-box" type="text" placeholder="Искать город вылета…" data-target="#hub-cities">
 <div class="hub-grid" id="hub-cities">
 <a href="from-fra.html">Франкфурт <span class="muted">(96)</span></a>
 <a href="from-ist.html">Стамбул <span class="muted">(38)</span></a>
@@ -129,7 +118,30 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
 <a href="from-beg.html">Белград <span class="muted">(31)</span></a>
 <a href="from-bkk.html">Бангкок <span class="muted">(30)</span></a>
 </div>
-<div class="search-empty">Ничего не нашлось — попробуй другой запрос.</div>
+
+<h2>🔥 Топ актуальных скидок</h2>
+<div class="route-list">
+<a href="dxb-tas.html"><span class="to">Дубай → Ташкент ✈️</span><span class="price">от 86 $</span></a>
+<a href="lax-sfo.html"><span class="to">Лос-Анджелес → Сан-Франциско 🇺🇸</span><span class="price">от 26 $</span></a>
+<a href="krr-aer.html"><span class="to">Краснодар → Сочи 🇷🇺</span><span class="price">от 8 047 ₽</span></a>
+<a href="led-kzn.html"><span class="to">Санкт-Петербург → Казань 🇷🇺</span><span class="price">от 3 685 ₽</span></a>
+<a href="mow-msq.html"><span class="to">Москва → Минск 🇧🇾</span><span class="price">от 2 455 ₽</span></a>
+<a href="tbs-ist.html"><span class="to">Тбилиси → Стамбул 🇹🇷</span><span class="price">от 73 €</span></a>
+<a href="led-tjm.html"><span class="to">Санкт-Петербург → Тюмень ✈️</span><span class="price">от 6 940 ₽</span></a>
+<a href="led-skx.html"><span class="to">Санкт-Петербург → Саранск ✈️</span><span class="price">от 6 230 ₽</span></a>
+<a href="sof-krk.html"><span class="to">София → Краков 🇵🇱</span><span class="price">от 28 €</span></a>
+<a href="vie-sof.html"><span class="to">Вена → София 🇧🇬</span><span class="price">от 51 €</span></a>
+<a href="dxb-mct.html"><span class="to">Дубай → Маскат ✈️</span><span class="price">от 67 $</span></a>
+<a href="mad-mil.html"><span class="to">Мадрид → Милан 🇮🇹</span><span class="price">от 21 €</span></a>
+<a href="dus-gro.html"><span class="to">Дюссельдорф → Жирона 🇪🇸</span><span class="price">от 57 €</span></a>
+<a href="nyc-las.html"><span class="to">Нью-Йорк → Лас-Вегас ✈️</span><span class="price">от 154 $</span></a>
+<a href="ham-dub.html"><span class="to">Гамбург → Дублин 🇮🇪</span><span class="price">от 55 €</span></a>
+<a href="bcn-pmo.html"><span class="to">Барселона → Палермо ✈️</span><span class="price">от 24 €</span></a>
+<a href="fra-skg.html"><span class="to">Франкфурт → Салоники ✈️</span><span class="price">от 72 $</span></a>
+<a href="prg-rom.html"><span class="to">Прага → Рим 🇮🇹</span><span class="price">от 32 €</span></a>
+<a href="aer-pee.html"><span class="to">Сочи → Perm ✈️</span><span class="price">от 8 859 ₽</span></a>
+<a href="mad-aho.html"><span class="to">Мадрид → Альгеро ✈️</span><span class="price">от 36 €</span></a>
+</div>
 
 <footer>
   FlightHunter — независимый агрегатор скидок на авиабилеты. Цены и партнёрские ссылки предоставлены Aviasales/Travelpayouts.

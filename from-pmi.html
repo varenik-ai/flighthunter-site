@@ -48,9 +48,16 @@ p{color:var(--text)}
 .hub-grid a{display:block;text-align:center;background:var(--surface);border:1px solid var(--border);
             border-radius:10px;padding:14px 10px;color:var(--text);text-decoration:none;font-weight:600}
 .hub-grid a:hover{border-color:var(--accent)}
-.search-box{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--border);
-            background:var(--surface);color:var(--text);font-size:14px;margin:14px 0 4px}
-.search-box:focus{outline:none;border-color:var(--accent)}
+/* Поиск — сделан заметным намеренно (29.09.2026, по отзыву пользователя:
+   на тёмном сайте прежний тихий инпут терялся внизу страницы). Обёртка
+   с иконкой и всегда видимой акцентной рамкой, а не только на фокусе. */
+.search-wrap{position:relative;margin:14px 0 4px}
+.search-wrap .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);
+                    color:var(--accent);font-size:16px;pointer-events:none}
+.search-box{width:100%;padding:14px 14px 14px 42px;border-radius:10px;border:2px solid var(--accent);
+            background:var(--surface);color:var(--text);font-size:15px}
+.search-box::placeholder{color:var(--muted)}
+.search-box:focus{outline:none;box-shadow:0 0 0 3px rgba(58,160,255,.25)}
 .search-empty{display:none;color:var(--muted);font-size:13px;padding:12px 0}
 footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
 </style>
@@ -64,7 +71,7 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid va
 <h1>✈️ Дешёвые авиабилеты из Пальма-де-Майорка</h1>
 <p>34 направлений с накопленной статистикой цен за последние 90 дней. Выбирай маршрут —
 внутри актуальные минимальная и обычная цена.</p>
-<input class="search-box" type="text" placeholder="Искать направление…" data-target="#hub-routes">
+<div class="search-wrap"><span class="icon">🔍</span><input class="search-box" type="text" placeholder="Искать направление…" data-target="#hub-routes"></div>
 <div class="route-list" id="hub-routes">
 <a href="pmi-nte.html"><span class="to">Нант ✈️</span><span class="price">от 78 €</span></a>
 <a href="pmi-alc.html"><span class="to">Аликанте ✈️</span><span class="price">от 32 €</span></a>
